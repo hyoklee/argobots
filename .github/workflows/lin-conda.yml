@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: argobots-0.0.0.conda
-          path: /usr/share/miniconda/envs/test/conda-bld/linux-64/argobots-0.0.0.conda
+          path: /usr/share/miniconda/envs/test/conda-bld/linux-64/argobots-0.0.0-0.conda
       - name: release
         run: |
-          anaconda -t  "${{ secrets.ANACONDA_TOKEN }}" upload /usr/share/miniconda/envs/test/conda-bld/linux-64/argobots-0.0.0.conda
+          anaconda -t  "${{ secrets.ANACONDA_TOKEN }}" upload /usr/share/miniconda/envs/test/conda-bld/linux-64/argobots-0.0.0-0.conda
