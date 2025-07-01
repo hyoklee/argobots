@@ -1,0 +1,25 @@
+package:
+  name: argobots
+  version: 0.0.0
+
+source:
+  path: .
+#  git_url: https://github.com/hyoklee/argobots
+#  git_depth: 1
+
+requirements:
+  build:
+    - autoconf
+  run:
+    - python
+
+test:
+  requires:
+    - autoconf
+  commands:
+    - pip --help
+
+about:
+  home: https://grc.iit.edu/research/projects/iowarp/
+  license: BSD
+  summary: IOWarp argobots Conda Package
